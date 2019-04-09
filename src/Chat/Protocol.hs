@@ -19,7 +19,7 @@ data ClientMsg = RequestJoin
                | CheckName String
                | RegisterName String
                | GetClients
-               | ChooseRecip String
+               | ChooseRecip Int
                | Message String
                deriving(Eq, Show, Generic)
 
