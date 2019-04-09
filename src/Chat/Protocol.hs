@@ -10,7 +10,7 @@ data ServerMsg = ConfirmJoin
                | NameTaken Bool
                | ActiveClients [(Int, String)]
                | Notice String
-               | MessageFrom String String
+               | MessageFrom (Int, String) String
                deriving(Eq, Show, Generic)
 
 instance Binary ServerMsg
