@@ -8,7 +8,7 @@ import GHC.Generics
 
 data ServerMsg = ConfirmJoin
                | NameTaken Bool
-               | ActiveClients [String]
+               | ActiveClients [(Int, String)]
                | Notice String
                | MessageFrom String String
                deriving(Eq, Show, Generic)
